@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+   background-repeat: no-repeat;
+    background-size: cover;
+    background: url(IMAGES/IMG_0107.png);
+}
+
+header {
+    
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header h2 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+article {
+    background-color: ;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+footer {
+    background-color: #ffcccb;
+    text-align: center;
+    padding: 20px;
+}
+
