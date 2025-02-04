@@ -29,14 +29,16 @@ main {
 section {
     margin-bottom: 40px;
 }
-
+img{
+    width: 698px;
+    height: 348px;
+}
 section h2 {
     font-size: 2em;
     margin-bottom: 20px;
 }
 
 article {
-    background-color: ;
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 10px;
