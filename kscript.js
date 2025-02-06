@@ -12,3 +12,15 @@ function showSlides (){
     setTimeout(showSlides,3000);
 }
 showSlides();
+
+let btn_islands=document.querySelector(".islands");
+let btn_city=document.querySelector(".City");
+
+btn_islands.addEventListener("click",(e)=>{
+    islands.style.islands
+});
+
+
+
+
+

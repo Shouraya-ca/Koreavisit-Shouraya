@@ -1,11 +1,19 @@
+@font-face {
+  font-family: "LEXEND_GIGA";
+  src: url(FONTS/Lexend_Giga.zip.zst) format("truetype");
+}
+
+
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'LEXEND_GIGA' ;
   background-repeat: no-repeat;
   background: url(IMAGES/IMG_0107.png);
+  background-position: center;
+  
 }
 
 header {
-  text-align: center;
+  text-align: center; 
   padding: 20px;
 }
 
@@ -19,7 +27,7 @@ header h2 {
   font-size: 1.5em;
 }
 
-.Homepage {
+.Home_page {
   display: flex;
   justify-content: space-between;
 }
@@ -30,6 +38,24 @@ header h2 {
 .slide {
   min-width: 100%;
 }
+.BUTTONS{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.outer_button{
+  display: inline-block;
+}
+.main_button{
+  padding: 15px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none; 
+  background-color: #F6E3E3;
+  border-radius: 50px;
+  opacity: 70%;
+}
+
 main {
   padding: 20px;
 }
@@ -40,20 +66,22 @@ section {
 img {
   width: 504.11px;
   height: 263.99px;
+  border-radius: 20px;
 }
 
 article {
   padding: 20px;
   margin-bottom: 20px;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-content: space-evenly;
+  background-color: #F9BBBB;
+  
 }
 
-.island-text {
+.island_text {
   height: 100%;
   margin: auto 0;
 }
@@ -63,7 +91,7 @@ p {
   padding-right: 10%;
   padding-left: 10%;
 }
-.flex-div {
+.flex_div {
   display: flex;
   align-items: flex-end;
 }
