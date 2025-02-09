@@ -13,8 +13,8 @@ function showSlides (){
 }
 showSlides();
 
-let btn_islands=document.querySelector(".islands");
-let btn_city=document.querySelector(".City");
+let btn_islands=document.querySelector(".butt_île");
+let btn_city=document.querySelector(".butt_ville");
 
 btn_islands.addEventListener("click",(e)=>{
     islands.style.islands

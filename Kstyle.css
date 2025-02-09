@@ -14,6 +14,13 @@ body {
   background-position: center;
   
 }
+h2{
+  font-weight: bolder;
+  size: 56px;
+}
+h3{
+  font-weight: normal;
+}
 
 header {
   text-align: center; 
@@ -25,14 +32,14 @@ header h1 {
   font-size: 2.5em;
 }
 
-header h2 {
+header h4 {
   margin: 0;
   font-size: 1.5em;
 }
 
 .Home_page {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 .slides {
   display: flex;
@@ -40,6 +47,7 @@ header h2 {
 }
 .slide {
   min-width: 100%;
+  justify-content: flex-end;
 }
 .BUTTONS{
   display: flex;
@@ -47,24 +55,40 @@ header h2 {
   align-items: center;
 }
 .outer_button{
-  display: inline-block;
+  display: flex;
+  background-color: #F9BBBB;
+  border-radius: 10%;
 }
-.main_button{
+.outer_button button{
   padding: 15px 20px;
   font-size: 16px;
   cursor: pointer;
   border: none; 
-  background-color: #F6E3E3;
-  border-radius: 50px;
-  opacity: 70%;
+  background-color: black;
+  color: #F9BBBB;
+ border-radius: 50px;
+transition: background-color 0.3s, color 0.3s
 }
-
+.outer_button:hover{
+background-color: #F9BBBB;
+opacity: 0.8;
+}
+.outer_button .active{
+ background-color: #F9BBBB;
+  color: black;
+}
 main {
   padding: 20px;
 }
 
-section {
-  margin-bottom: 40px;
+h2{
+  width: 80%;
+  color: black;
+  text-align: center;
+  padding: 20px;
+ display: flex;
+ justify-content: center;
+ font-weight: bolder;
 }
 img {
   width: 504.11px;
@@ -93,20 +117,9 @@ p {
   text-align: start;
   padding-right: 10%;
   padding-left: 10%;
+ 
 }
 .flex_div {
   display: flex;
   align-items: flex-end;
-}
-.city_gyeongju {
-  display: flex;
-  align-items: baseline;
-}
-.city_séoul {
-  display: flex;
-  align-items: flex-start;
-}
-.img_gyeongju {
-  display: flex;
-  justify-content: flex-start;
 }
