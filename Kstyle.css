@@ -17,6 +17,12 @@ body {
 h2{
   font-weight: bolder;
   size: 56px;
+  width: 80%;
+  color: black;
+  text-align: center;
+  padding: 20px;
+ display: flex;
+ justify-content: center;
 }
 h3{
   font-weight: normal;
@@ -56,8 +62,7 @@ header h4 {
 }
 .outer_button{
   display: flex;
-  background-color: #F9BBBB;
-  border-radius: 10%;
+  
 }
 .outer_button button{
   padding: 15px 20px;
@@ -71,7 +76,7 @@ transition: background-color 0.3s, color 0.3s
 }
 .outer_button:hover{
 background-color: #F9BBBB;
-opacity: 0.8;
+border-radius: 22%;
 }
 .outer_button .active{
  background-color: #F9BBBB;
@@ -80,16 +85,11 @@ opacity: 0.8;
 main {
   padding: 20px;
 }
-
-h2{
-  width: 80%;
-  color: black;
-  text-align: center;
-  padding: 20px;
- display: flex;
- justify-content: center;
- font-weight: bolder;
+h4{
+  font-weight: normal;
+  size: 48px;
 }
+  
 img {
   width: 504.11px;
   height: 263.99px;
