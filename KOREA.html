@@ -4,35 +4,52 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="Kstyle.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
     <title>KoreaTravel</title>
   </head>
   <body>
     <header>
       <h1>RêvesCoréens</h1>
-      <h2>Corée du Sud</h2>
+      <h4>Corée du Sud</h4>
     </header>
 
     <main>
-      <div class="Homepage">
+      <div class="Home_page">
         <h2>Une si belle vue</h2>
         <div class="carousel">
-         <div class="slides">
-           <div class="slide"><img src="IMAGES/séoul nuit 2.jpg" /></div>
-           <div class="slide"><img src="IMAGES/jeju.jpg" /></div>
-           <div class="slide"><img src="IMAGES/temple Séoul.jpg" /></div>
-           <div class="slide"><img src="IMAGES/sheellae-sheellae-oMcA1fQg-ZQ-unsplash.jpg" /></div>
-           <div class="slide"><img src="IMAGES/vue magnifique Ganghwa.jpg"></div>
+          <div class="slides">
+            <div class="slide"><img src="IMAGES/séoul nuit 2.jpg" /></div>
+            <div class="slide"><img src="IMAGES/jeju.jpg" /></div>
+            <div class="slide"><img src="IMAGES/temple Séoul.jpg" /></div>
+            <div class="slide">
+              <img src="IMAGES/sheellae-sheellae-oMcA1fQg-ZQ-unsplash.jpg" />
+            </div>
+            <div class="slide">
+              <img src="IMAGES/vue magnifique Ganghwa.jpg" />
+            </div>
+            <div class="slide"><img src="IMAGES/seoul-de-nuit.webp" /></div>
           </div>
         </div>
       </div>
-      <div class=""></div>
-      <section class="islands">
-        <h2>Nos îles</h2>
+      <div class="BUTTONS">
+        <div class="outer_button">
+          <button onclick="location.href='#islands'">Îles</button>
+          <button onclick="location.href='#city'" class="active">Villes</button>
+          <button onclick="location.href='#food'" >Découvrir</button>
+        </div>
+      </div>
+      <section  id="islands" class="islands">
+        <h2>Îles</h2>
         <article>
-          <div class="island_seonyudo">L’île de Seonyudo</div>
-          <div class="flex-div">
+          <div class="island_seonyudo"><h3>L’île de Seonyudo</h3></div>
+          <div class="flex_div">
             <img src="IMAGES/gunsan-seonyudo.jpg" />
-            <div class="island-text">
+            <div class="island_text">
               <p>
                 Réputée pour ses vues spectaculaires, l’île offre un cadre
                 paisible loin de l’agitation urbaine. Elle vous propose des
@@ -43,110 +60,121 @@
           </div>
         </article>
         <article>
-          <div class="island_jeju">L’île de Jeju</div>
-          <div class="flex-div">
+          <div class="island_jeju"><h3>L’île de Jeju</h3></div>
+          <div class="flex_div">
             <img src="IMAGES/jeju CS.jpg" />
-            <div class="island-text">
-            <p>
-              Une île volcanique formée par des éruptions, aujourd’hui célèbre
-              pour ses paysages volcaniques. Située au sud de la péninsule
-              coréenne, c'est une destination fascinante avec une histoire riche
-              et variée. Elle est connue pour sa spécialité culinaire : le porc
-              noir de Jeju (Heukdwaeji).
-            </p>
-           </div>
+            <div class="island_text">
+              <p>
+                Une île volcanique formée par des éruptions, aujourd’hui célèbre
+                pour ses paysages volcaniques. Située au sud de la péninsule
+                coréenne, c'est une destination fascinante avec une histoire
+                riche et variée. Elle est connue pour sa spécialité culinaire :
+                le porc noir de Jeju (Heukdwaeji).
+              </p>
+            </div>
           </div>
         </article>
         <article>
-          <div class="island_hahoe">L’île de Hahoe</div>
-          <div class="flex-div">
+          <div class="island_hahoe"><h3>L’île de Hahoe</h3></div>
+          <div class="flex_div">
             <img src="IMAGES/hahoe.jpg" />
-            <div class="island-text">
-            <p>
-              Connue pour ses maisons en forme de fleur de lotus, cette île
-              paradisiaque offre des opportunités pour des croisières et des
-              activités nautiques pour se détendre.
-            </p>
-           </div>
+            <div class="island_text">
+              <p>
+                Connue pour ses maisons en forme de fleur de lotus, cette île
+                paradisiaque offre des opportunités pour des croisières et des
+                activités nautiques pour se détendre.
+              </p>
+            </div>
           </div>
         </article>
         <article>
-          <div class="island_ganghwa">L’île de Ganghwa-Do</div>
-          <div class="flex-div">
+          <div class="island_ganghwa"><h3>L’île de Ganghwa-Do</h3></div>
+          <div class="flex_div">
             <img src="IMAGES/Ganghwa do.jpg" />
-            <div class="island-text">
-            <p>
-              Réputée pour ses vues spectaculaires, l’île offre un cadre
-              paisible loin de l’agitation urbaine. Elle propose des couchers de
-              soleil incroyables depuis le sommet de la colline Mangjubong.
-            </p>
-          </div>
+            <div class="island_text">
+              <p>
+                Réputée pour ses vues spectaculaires, l’île offre un cadre
+                paisible loin de l’agitation urbaine. Elle propose des couchers
+                de soleil incroyables depuis le sommet de la colline Mangjubong.
+              </p>
+            </div>
           </div>
         </article>
       </section>
       <section>
-        <div class="VILLES">VILLES</div>
+        <div id="city" class="City"><h2>Villes</h2></div>
         <article>
-          <div class="city_séoul">La ville de Séoul</div>
-          <div class="flex-div">
+          <div class="city_séoul"><h3>La ville de Séoul</h3></div>
+          <div class="flex_div">
             <img src="IMAGES/Séoul.jpg" />
-            <div class="island-text">
-             <p>
-               Traversée par la rivière Han, Séoul est le berceau de la K-pop et
-               un centre culturel majeur, avec des quartiers comme Gangnam et
-               Hongdae célèbres pour leur scène artistique et leur vie nocturne
-               animée.
-             </p>
+            <div class="island_text">
+              <p>
+                Traversée par la rivière Han, Séoul est le berceau de la K-pop
+                et un centre culturel majeur, avec des quartiers comme Gangnam
+                et Hongdae célèbres pour leur scène artistique et leur vie
+                nocturne animée.
+              </p>
             </div>
           </div>
         </article>
         <article>
-          <div class="city_busan">La ville de Busan</div>
-          <div class="flex-div">
+          <div class="city_busan"><h3>La ville de Busan</h3></div>
+          <div class="flex_div">
             <img src="IMAGES/busan.jpg" />
-            <div class="island-text">
-            <p>
-              Busan est célèbre pour ses plages, ses temples historiques, mais
-              aussi pour son côté nocturne animé par ses nombreux bars,
-              restaurants et clubs le long de la plage de Haeundae.
-            </p>
-          </div>
+            <div class="island_text">
+              <p>
+                Busan est célèbre pour ses plages, ses temples historiques, mais
+                aussi pour son côté nocturne animé par ses nombreux bars,
+                restaurants et clubs le long de la plage de Haeundae.
+              </p>
+            </div>
           </div>
         </article>
         <article>
-          <div class="city_incheon">La ville d'Incheon</div>
-          <div class="flex-div">
+          <div class="city_incheon"><h3>La ville d'Incheon</h3></div>
+          <div class="flex_div">
             <img src="IMAGES/Incheon 2.jpg" />
-            <div class="island-text">
-            <p>
-              Une ville qui combine harmonieusement l’histoire et la modernité,
-              offrant une expérience riche et diversifiée aux visiteurs.
-            </p>
+            <div class="island_text">
+              <p>
+                Une ville qui combine harmonieusement l’histoire et la
+                modernité, offrant une expérience riche et diversifiée aux
+                visiteurs.
+              </p>
             </div>
           </div>
         </article>
         <article>
-          <div class="city_gyeongju">La ville de Gyeongju</div>
-          <div class="flex-div">
+          <div class="city_gyeongju"><h3>La ville de Gyeongju</h3></div>
+          <div class="flex_div">
             <img src="IMAGES/Gyeongju.jpg" />
-            <div class="island-text">
-            <p>
-              Connue pour son village traditionnel bien préservé, qui offre un
-              aperçu de la vie à l’époque Joseon.
-            </p>
+            <div class="island_text">
+              <p>
+                Connue pour son village traditionnel bien préservé, qui offre un
+                aperçu de la vie à l’époque Joseon.
+              </p>
             </div>
           </div>
         </article>
       </section>
-      <p>Laissez vos papilles voyager !!!</p>
-      <p>Sucrée ?</p>
+      <div id="food" class="container">
+         <h2> Laisser vos papilles voyager !!!</h2>
+          <div class="image_grid"> 
+            <img src="IMAGES/Andong jjimdak.png" > 
+            <p>1. Andong jjiamdak : Plat traditionnel coréen composé de poulet mijoté avec des légumes des nouilles en verres et une sauce épicée.</p>
+            <img src="IMAGES/bibimpa.jpg" >
+            <p>2. Bibimbap : Un bol de riz avec des légumes variés, un œuf au plat et de la viande.</p>           
+            <img src="IMAGES/Heotjesabap.webp" > 
+            <p>3.Heotjesabap: Un Bibimbap d'Andong assaisonné de sauce joja.</p>
+            <img src="IMAGES/tteobokki 1.jpg" > 
+            <p>4. Tteokbokki : Des gâteaux de riz épicés dans une sauce rouge.</p>
+            <img src="IMAGES/samgyetang avec le ginseng de Ganghwa do.jpg" > 
+            <p>5. Samgyetang : Soupe de poulet au ginseng.</p> 
+            <img src="IMAGES/kimchi.jpg" > 
+            <p>6. Kimchi : Chou fermenté épicé, plat traditionnel coréen.</p>
 
-      <section>
-        <p>Laissez vos papilles voyager !!!</p>
-        <p>Sucrée ?</p>
-      </section>
+          </div> 
+        </div> 
     </main>
-    <footer></footer>
     <script src="kscript.js"></script>
   </body>
 </html>
